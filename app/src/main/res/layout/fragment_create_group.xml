@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    android:id="@+id/createGroup"
+    tools:context=".fragment.CreateGroup">
+
+    <TextView
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/newGroup"
+        android:textSize="30sp"
+        android:textColor="@color/darkText" />
+
+    <EditText
+        android:id="@+id/etNameGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="15"
+        android:hint="@string/hint_group_name"
+        android:autofillHints="@string/hint_group_name"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spnGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnNewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:textColor="@color/white"
+        android:background="@drawable/buttons_orange"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+</LinearLayout>

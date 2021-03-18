@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vote_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    tools:context=".activity.VoteActivity">
+
+    <TextView
+        android:id="@+id/places_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Places"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkText"
+        android:textSize="30sp" />
+    <ListView
+        android:id="@+id/lvPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/confirmVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_check_black_24dp" />
+</LinearLayout>

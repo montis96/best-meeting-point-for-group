@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_groups">
+
+    <fragment
+        android:id="@+id/nav_groups"
+        android:name="com.example.myapplication.fragment.GroupList"
+        tools:layout="@layout/fragment_group_list" />
+
+    <fragment
+        android:id="@+id/nav_invitations"
+        android:name="com.example.myapplication.fragment.InvitationList"
+        tools:layout="@layout/fragment_invitation_list" />
+
+</navigation>
